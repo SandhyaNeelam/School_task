@@ -5,7 +5,7 @@ namespace Aspschool.Models;
 public record Class
 {
     public int Id { get; set; }
-    public string ClassCapacity { get; set; }
+    public int ClassCapacity { get; set; }
 
     public ClassDTO asDto => new ClassDTO
     {
@@ -13,5 +13,4 @@ public record Class
         ClassCapacity= ClassCapacity
     };
 
-    public object Name { get; internal set; }
 }

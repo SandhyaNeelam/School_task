@@ -9,7 +9,7 @@ public record ClassDTO
     public int Id { get; set; }
 
     [JsonPropertyName("class_capacity")]
-    public string ClassCapacity { get; set; }
+    public int ClassCapacity { get; set; }
 
     [JsonPropertyName("students")]
     public List<StudentDTO> Student { get; set; }
@@ -23,8 +23,8 @@ public record ClassCreateDTO
     [Required]
     public int Id { get; set; }
 
-    [JsonPropertyName("name")]
-    public string ClassCapacity { get; set; }
+    [JsonPropertyName("class_capacity")]
+    public int ClassCapacity { get; set; }
 
 }
 
